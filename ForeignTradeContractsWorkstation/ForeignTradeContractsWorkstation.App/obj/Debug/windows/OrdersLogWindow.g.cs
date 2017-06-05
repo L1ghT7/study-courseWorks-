@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using ForeignTradeContractsWorkstation.App;
 using ForeignTradeContractsWorkstation.App.Windows;
 using System;
 using System.Diagnostics;

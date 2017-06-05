@@ -10,6 +10,7 @@
 //------------------------------------------------------------------------------
 
 using ForeignTradeContractsWorkstation.App.Windows;
+using ForeignTradeContractsWorkstation.App.Windows.Helpers;
 using System;
 using System.Diagnostics;
 using System.Windows;
