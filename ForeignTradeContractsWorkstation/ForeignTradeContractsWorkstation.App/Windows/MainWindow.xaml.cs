@@ -17,12 +17,15 @@ using ForeignTradeContractsWorkstation.App.Database.Contexts.Directory;
 using ForeignTradeContractsWorkstation.App.Database;
 using System.Collections.ObjectModel;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using ForeignTradeContractsWorkstation.App.Windows.Helpers;
 using ForeignTradeContractsWorkstation.App.Database.Contexts.Directory.Entities;
 using ForeignTradeContractsWorkstation.App.Reports;
 using ForeignTradeContractsWorkstation.App.Windows;
 using ForeignTradeContractsWorkstation.App.Windows.interfaces;
-using Xceed.Wpf.Toolkit;
+using   Xceed.Wpf.Toolkit;
+using ComboBox = System.Windows.Controls.ComboBox;
+using IO = System.IO;
 
 namespace ForeignTradeContractsWorkstation.App
 {
@@ -68,6 +71,22 @@ namespace ForeignTradeContractsWorkstation.App
             var ordersLogWindow = WindowsFabric.GetOrdersLogWindow(this);
             ordersLogWindow.ShowDialog();
         }
+
+        private void OpenHelp(object sender, RoutedEventArgs e)
+        {
+            var baseDirectory = IO.Path.GetFullPath(@"..\..\");
+            var chmName = @"help\help.chm";
+            var fullPath = IO.Path.Combine(baseDirectory, chmName);
+            if (IO.File.Exists(fullPath))
+            {
+                Help.ShowHelp(null,fullPath);
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show(this, $"There is no file {chmName} in directory {baseDirectory}","Ошибка",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+        }
+
 
         private void StatisticMenuItemClickHandler(object sender, RoutedEventArgs e)
         {
@@ -564,6 +583,10 @@ namespace ForeignTradeContractsWorkstation.App
 
             return order;
         }
+
+
+       
+
 
     }
 }

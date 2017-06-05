@@ -47,7 +47,7 @@
                 <MenuItem Header="Журнал заказов" HorizontalAlignment="Left" Width="200" Click="OrdersLogMenuItemClickHandler"/>
                 <MenuItem Header="Статистика" HorizontalAlignment="Left" Width="200" Click="StatisticMenuItemClickHandler"/>
             </MenuItem>
-            <MenuItem Header="Помощь"/>
+            <MenuItem Header="Помощь" Click="OpenHelp"/>
         </Menu>
 
 
