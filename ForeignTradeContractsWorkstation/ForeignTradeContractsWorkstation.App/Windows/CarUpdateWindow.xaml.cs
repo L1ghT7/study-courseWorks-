@@ -1,0 +1,42 @@
+﻿using ForeignTradeContractsWorkstation.App.Database;
+using ForeignTradeContractsWorkstation.App.Database.Contexts.Directory;
+using ForeignTradeContractsWorkstation.App.Windows.Helpers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace ForeignTradeContractsWorkstation.App.Windows
+{
+    /// <summary>
+    /// Логика взаимодействия для CarUpdateWindow.xaml
+    /// </summary>
+    public partial class CarUpdateWindow : Window
+    {
+        public Cars CurrentCar { get; set; }
+        public CarUpdateWindow(Cars car = null)
+        {
+            InitializeComponent();
+            CurrentCar = car ?? new Cars();
+            this.DataContext = CurrentCar;
+        }
+
+        private void saveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowValidationHelper.ValidateEntity(CurrentCar))
+            {
+                WindowDataHelper.AddOrdUpdateRecord(CurrentCar);
+                this.Close();
+            }
+        }
+    }
+}
