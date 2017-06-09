@@ -58,7 +58,7 @@ namespace ForeignTradeContractsWorkstation.App.Windows.Helpers.Charts
                 var piesSeries = new PieSeries()
                 {
                     Title = x.Name,
-                    Values = new ChartValues<float>() { x.TotalSum },
+                    Values = new ChartValues<long>() { (long)x.TotalSum },
                     LabelPoint = labelPoint
                     
                 };

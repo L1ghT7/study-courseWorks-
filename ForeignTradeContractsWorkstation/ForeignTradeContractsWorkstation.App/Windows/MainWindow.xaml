@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ForeignTradeContractsWorkstation.App"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Главное меню" Height="764.136" Width="963.997" Activated="Window_Activated" Loaded="Window_Loaded">
+        Title="Главное меню" Height="745.136" Width="963.997" Activated="Window_Activated" Loaded="Window_Loaded">
     <Grid Margin="0,0,27,-5" Height="659" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="335*"/>
@@ -52,7 +52,7 @@
 
 
 
-        <TabControl x:Name="mainTabs" Margin="10,27,-26,-64" Grid.ColumnSpan="3">
+        <TabControl x:Name="mainTabs" Margin="10,27,-26,-43" Grid.ColumnSpan="3">
             <TabItem x:Name="orders">
                 <TabItem.Header>
                     <StackPanel>
@@ -127,16 +127,16 @@
             x:Name="goodCombobox" HorizontalAlignment="Left" Margin="124,208,0,0" Width="279" Grid.ColumnSpan="5" Height="28" VerticalAlignment="Top"/>
 
                         <Button x:Name="button" Content="Добавить к заказу" Margin="189.12,208,249,0" Click="button_Click" Grid.Column="4" Height="28" VerticalAlignment="Top"/>
-                        <Button x:Name="button_Copy" Content="Сохранить заказ" Margin="22,615,612,-75" RenderTransformOrigin="0.514,0.118" Grid.ColumnSpan="5" Height="28" VerticalAlignment="Top" Click="button_Copy_Click"/>
-                        <Label x:Name="label2" Content="Комментарий" HorizontalAlignment="Left" Margin="22,584,0,-42" VerticalAlignment="Top" Width="90"/>
-                        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="26" Margin="124,584,0,-42" TextWrapping="Wrap"  VerticalAlignment="Top" Width="518" Grid.ColumnSpan="5"/>
-                        <Label FontWeight="Bold" x:Name="textLabel" Content="Итого отгружено на сумму: " Margin="22,556,0,-14" VerticalAlignment="Top" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="171"/>
-                        <Label FontWeight="Bold" x:Name="sumLabel"  HorizontalAlignment="Left" Margin="6.617,559,0,-14" VerticalAlignment="Top" Width="131" Grid.Column="2" Height="23" Grid.ColumnSpan="3"/>
+                        <Button x:Name="button_Copy" Content="Сохранить заказ" Margin="22,604,612,-64" RenderTransformOrigin="0.514,0.118" Grid.ColumnSpan="5" Height="28" VerticalAlignment="Top" Click="button_Copy_Click"/>
+                        <Label x:Name="label2" Content="Комментарий" HorizontalAlignment="Left" Margin="22,573,0,-31" VerticalAlignment="Top" Width="90"/>
+                        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="26" Margin="124,573,0,-31" TextWrapping="Wrap"  VerticalAlignment="Top" Width="518" Grid.ColumnSpan="5"/>
+                        <Label FontWeight="Bold" x:Name="textLabel" Content="Итого отгружено на сумму: " Margin="22,542,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="171"/>
+                        <Label FontWeight="Bold" x:Name="sumLabel"  HorizontalAlignment="Left" Margin="7,545,0,0" VerticalAlignment="Top" Width="131" Grid.Column="2" Height="23" Grid.ColumnSpan="3"/>
                         <Label FontSize="14"  x:Name="tax_Label" Content="Налог" Margin="117,75,469,0" Height="32" VerticalAlignment="Top" Grid.Column="4"/>
                         <Label FontSize="14"  x:Name="tax_Label_Copy" Margin="220,75,366,0" Height="32" VerticalAlignment="Top" Grid.Column="4"/>
                         <Label FontSize="14"  x:Name="tax_Label_Copy1" Content="%" Margin="230.617,74,355.868,0" Height="32" VerticalAlignment="Top" Grid.Column="4"/>
-                        <Label FontWeight="Bold" x:Name="textLabel_Copy" Content="в.т.ч. НДС:" Margin="93.617,556,480.868,-14" VerticalAlignment="Top" Grid.Column="4"/>
-                        <Label FontWeight="Bold" x:Name="taxLabel"  HorizontalAlignment="Left" Margin="164.617,556,0,-11" VerticalAlignment="Top" Width="79" Grid.Column="4" Height="23" RenderTransformOrigin="0.547,2.087"/>
+                        <Label FontWeight="Bold" x:Name="textLabel_Copy" Content="в.т.ч. НДС:" Margin="94,542,481,0" VerticalAlignment="Top" Grid.Column="4"/>
+                        <Label FontWeight="Bold" x:Name="taxLabel"  HorizontalAlignment="Left" Margin="165,542,0,0" VerticalAlignment="Top" Width="79" Grid.Column="4" Height="23" RenderTransformOrigin="0.547,2.087"/>
                         <Label FontSize="14"  x:Name="amount_label" Content="Количество" Margin="124,236,22,0" Height="38" VerticalAlignment="Top" Grid.ColumnSpan="4"/>
                         <xctk:IntegerUpDown   Name="numberPicker" Minimum="1" Maximum="100" DefaultValue="1" DisplayDefaultValueOnEmptyText="true" Margin="5,241,629,305" Grid.Column="3" Grid.ColumnSpan="2"/>
                         <TextBox IsReadOnly="True" x:Name="total_sum" HorizontalAlignment="Left" Margin="124,481,0,0" TextWrapping="Wrap" Text="" Width="130" Height="28" VerticalAlignment="Top" Grid.ColumnSpan="5"/>
@@ -156,7 +156,7 @@
                 </TabItem.Header>
                 <TabItem.Content>
                     <Grid Margin="0,0,-24,0">
-                        <GroupBox BorderThickness="1" BorderBrush="Aquamarine" Header="ТН,ТТН" Margin="10,10,0,378" HorizontalAlignment="Left" Width="930" >
+                        <GroupBox BorderThickness="1" BorderBrush="Aquamarine" Header="ТН,ТТН" Margin="10,10,0,24" HorizontalAlignment="Left" Width="930" >
                             <Grid Margin="0,0,-29,-33">
                                 <GroupBox BorderThickness="1" BorderBrush="Aquamarine" Header="Основание отпуска" Height="92" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" Margin="0,-2,0,0">
                                     <Grid Margin="0,0,0,-22">
@@ -195,13 +195,13 @@
          
                                     x:Name="coworkers_combobox" Margin="116,98,0,0" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="195" SelectionChanged="coworkers_combobox_SelectionChanged"/>
                                 <Label Content="Сдал отправитель" Margin="356,92,408,82"/>
-                                <TextBox IsReadOnly="True" x:Name="sender_textbox" HorizontalAlignment="Left" Margin="475,98,0,164" TextWrapping="Wrap"  Width="173"/>
+                                <TextBox IsReadOnly="True" x:Name="sender_textbox" HorizontalAlignment="Left" Margin="475,98,0,0" TextWrapping="Wrap"  Width="173" Height="23" VerticalAlignment="Top"/>
                                 <CheckBox Margin="612,0,121,82" RenderTransformOrigin="3.588,1.368" />
                                 <Label Content="Округлять цены в формах ТН,ТТН" Margin="632,-6,-45,82"/>
-                                <Label Content="К перевозке принял" Margin="575,22,56,114"/>
-                                <Label Content="Принял грузополучатель" Margin="575,60,206,183"/>
-                                <TextBox Margin="730,60,0,204" HorizontalAlignment="Left" Width="174"/>
-                                <TextBox IsReadOnly="True" x:Name="driver_textbox" HorizontalAlignment="Left" Margin="730,22,0,240" TextWrapping="Wrap"  Width="174"/>
+                                <Label Content="К перевозке принял" Margin="575,22,56,0" Height="149" VerticalAlignment="Top"/>
+                                <Label Content="Принял грузополучатель" Margin="575,60,206,0" Height="42" VerticalAlignment="Top"/>
+                                <TextBox Margin="730,60,0,0" HorizontalAlignment="Left" Width="174" Height="21" VerticalAlignment="Top"/>
+                                <TextBox IsReadOnly="True" x:Name="driver_textbox" HorizontalAlignment="Left" Margin="730,22,0,0" TextWrapping="Wrap"  Width="174" Height="23" VerticalAlignment="Top"/>
                             </Grid>
                         </GroupBox>
 
@@ -283,17 +283,17 @@
                                                         <Label Content="Вр. прибытия" RenderTransformOrigin="0.277,0.5" HorizontalAlignment="Left" Width="96" Grid.ColumnSpan="2" Margin="178,1,0,-35" Grid.Column="2" Height="79" VerticalAlignment="Top"/>
 
 
-                                                        <xctk:TimePicker Name="TimeArrival1"  HorizontalAlignment="Right" Width="77" Margin="0,4,487,93" Grid.Column="3" />
+                                                        <xctk:TimePicker Name="TimeArrival1"  HorizontalAlignment="Right" Width="77" Margin="0,4,487,0" Grid.Column="3" Height="26" VerticalAlignment="Top" />
 
                                                         <Label  Content="Дата убытия" Margin="141,4,0,-38" Grid.Column="3" RenderTransformOrigin="0.277,0.647" HorizontalAlignment="Left" Width="96" Height="79" VerticalAlignment="Top"/>
                                                         <DatePicker Name="DepartureDate1" Margin="219,5,0,0" Grid.Column="3" HorizontalAlignment="Left" Width="101" Height="30" VerticalAlignment="Top"/>
                                                         <Label Content="Вр. убытия" RenderTransformOrigin="0.277,0.5" HorizontalAlignment="Left" Width="96" Margin="320,5,0,-39" Grid.Column="3" Height="79" VerticalAlignment="Top"/>
                                                         <Label Content="Простой" RenderTransformOrigin="0.167,0.529" HorizontalAlignment="Left" Width="96" Margin="473,4,0,-38" Grid.Column="3" Height="79" VerticalAlignment="Top"/>
                                                         <xctk:DecimalUpDown Minimum="1" DisplayDefaultValueOnEmptyText="True" Name="Address1" Grid.Column="3" Margin="534,4,0,0" RenderTransformOrigin="-0.093,0.292" HorizontalAlignment="Left" Width="84" Height="30" VerticalAlignment="Top"/>
-                                                        <xctk:TimePicker x:Name="TimeDeparture1"  HorizontalAlignment="Right" Width="77" Margin="0,8,160,89" Grid.Column="3" />
+                                                        <xctk:TimePicker x:Name="TimeDeparture1"  HorizontalAlignment="Right" Width="77" Margin="0,8,160,0" Grid.Column="3" Height="26" VerticalAlignment="Top" />
                                                     </Grid>
                                                 </GroupBox>
-                                                <GroupBox BorderThickness="1" BorderBrush="Aquamarine" Header="Разгрузка" Margin="0,127,-88,19" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="895">
+                                                <GroupBox BorderThickness="1" BorderBrush="Aquamarine" Header="Разгрузка" Margin="0,127,-88,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="895" Height="145" VerticalAlignment="Top">
                                                     <Grid Margin="0,0,-38,0" HorizontalAlignment="Left" Width="824">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition Width="31*"/>
