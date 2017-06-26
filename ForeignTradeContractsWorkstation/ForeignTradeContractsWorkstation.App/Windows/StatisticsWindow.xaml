@@ -13,7 +13,7 @@
             <ColumnDefinition Width="65*"/>
             <ColumnDefinition Width="404*"/>
         </Grid.ColumnDefinitions>
-        <Controls:PieChartExample x:Name="PieChartExampleTest" Margin="0,105,359,46" Grid.ColumnSpan="2"></Controls:PieChartExample>
+        <Controls:PieChartExample x:Name="PieChartExampleTest" Margin="0,105,48,46" Grid.ColumnSpan="2"></Controls:PieChartExample>
         <Label FontSize="20" FontWeight="Thin" x:Name="label1" Content="Самые продаваемые товары за период" HorizontalAlignment="Left" Margin="23,8,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="37" Width="401"/>
         <DatePicker Name="fromPicker" HorizontalAlignment="Left" Margin="42,42,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" SelectedDateChanged="datePicker_SelectedDateChanged"/>
         <Label FontSize="15" FontWeight="Thin" x:Name="label1_Copy" Content="с" HorizontalAlignment="Left" Margin="23,38,0,0" VerticalAlignment="Top" Height="37" Width="19" RenderTransformOrigin="0.789,0.595"/>
