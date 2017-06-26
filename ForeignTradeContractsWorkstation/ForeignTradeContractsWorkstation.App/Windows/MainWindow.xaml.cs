@@ -177,6 +177,11 @@ namespace ForeignTradeContractsWorkstation.App
             counterParties_combobox.SelectedValue = 0;
             coworkers_combobox.SelectedValue = 0;
             drivers1_combobox.SelectedValue = 0;
+            total_sum.Text = string.Empty;
+            total_weight.Text = string.Empty;
+            sumLabel.Content = string.Empty;
+            taxLabel.Content = string.Empty;
+
             GoodsForOrder = new List<Goods>();
             goodsDataGrid.ItemsSource = GoodsForOrder;
         }
