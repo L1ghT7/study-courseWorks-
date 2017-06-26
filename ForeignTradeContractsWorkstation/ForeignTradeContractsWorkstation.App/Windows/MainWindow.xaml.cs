@@ -158,10 +158,10 @@ namespace ForeignTradeContractsWorkstation.App
                 goodCombobox.ItemsSource = WindowDataHelper.GetAllRecords<Goods>().Where(x => x.storage_key == firstStorage.Id);
             }
             CurrentStorage = new Storage();
-            if (CurrentEntityId.HasValue)
-            {
-                UpdateEntity();
-            }
+            //if (CurrentEntityId.HasValue)
+            //{
+            //    UpdateEntity();
+            //}
             CalculateAllSum();
         }
 
@@ -584,9 +584,9 @@ namespace ForeignTradeContractsWorkstation.App
             return order;
         }
 
-
-       
-
-
+        public void InitUpdate()
+        {
+            UpdateEntity();
+        }
     }
 }

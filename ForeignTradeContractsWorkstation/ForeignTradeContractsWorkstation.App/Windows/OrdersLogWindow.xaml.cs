@@ -54,7 +54,7 @@ namespace ForeignTradeContractsWorkstation.App.Windows
         {
             var selected = dataGrid.SelectedItem as Orders;
             _helper.CurrentEntityId = selected.Id;
-
+            _helper.InitUpdate();
            
 
             this.Close();

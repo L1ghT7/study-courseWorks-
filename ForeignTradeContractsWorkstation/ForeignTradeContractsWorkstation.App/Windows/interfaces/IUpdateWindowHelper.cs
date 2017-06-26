@@ -11,5 +11,7 @@ namespace ForeignTradeContractsWorkstation.App.Windows.interfaces
         where T: class,IBaseEntity
     {
         long? CurrentEntityId { get; set; }
+
+        void InitUpdate();
     }
 }
